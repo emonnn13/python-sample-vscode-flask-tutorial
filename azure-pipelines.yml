@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: gcp-windows
 strategy:
   matrix:
     Python27:
