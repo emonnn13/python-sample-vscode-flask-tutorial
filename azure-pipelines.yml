@@ -13,17 +13,17 @@ pool:
   # vmImage: gcp-windows
   
 # strategy:
-  matrix:
-    Python27:
-      python.version: '2.7'
+  # matrix:
+  #   Python27:
+  #     python.version: '2.7'
     # Python35:
     #   python.version: '3.5'
-    Python36:
-      python.version: '3.6'
-    Python37:
-      python.version: '3.7'
+    # Python36:
+    #   python.version: '3.6'
+    # Python37:
+    #   python.version: '3.7'
 
-steps:
+# steps:
 # - task: UsePythonVersion@0
 #   inputs:
 #     versionSpec: '$(python.version)'
@@ -34,6 +34,6 @@ steps:
   #   python -m pip install --upgrade pip
   #   pip install -r requirements.txt
   # displayName: 'Install dependencies'
-
-  - script: touch azurepipeline.txt > "Hello from azure."
+steps:
+  - script: New-Item test.txt
     displayName: Writing
