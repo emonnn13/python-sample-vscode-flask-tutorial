@@ -38,7 +38,7 @@ pool:
 #   - script: touch test.txt > "Hello world"
 
 #     displayName: Writing
-
+steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
