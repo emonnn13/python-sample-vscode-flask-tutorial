@@ -7,8 +7,8 @@ trigger:
 - master
 
 pool:
-  name: gcp-windows
-  demands: WINDOWS-SERVER-
+  name: gcplinux
+  # demands: WINDOWS-SERVER-
   # demands: gcplinux
   # vmImage: gcp-windows
   
@@ -34,6 +34,17 @@ pool:
   #   python -m pip install --upgrade pip
   #   pip install -r requirements.txt
   # displayName: 'Install dependencies'
-steps:
-  - script: New-Item test.txt
-    displayName: Writing
+# steps:
+#   - script: touch test.txt > "Hello world"
+
+#     displayName: Writing
+  
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo 'Hello world'
+      touch azurepipeline.txt > "Pipeline working"
+      pwd
