@@ -45,6 +45,6 @@ steps:
     script: |
       # Write your commands here
       
-      echo 'Hello world'
-      touch azurepipeline.txt > "Pipeline working"
-      pwd
+      sudo echo 'Hello world'
+      sudo touch azurepipeline.txt > "Pipeline working"
+      sudo pwd
