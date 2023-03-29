@@ -6,8 +6,8 @@
 trigger:
 - master
 
-pool:
-  name: Default
+pool: Default
+  # name: Default
   # demands: WINDOWS-SERVER-
   # demands: gcplinux
   # vmImage: gcp-windows
