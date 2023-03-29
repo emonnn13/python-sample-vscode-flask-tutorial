@@ -44,7 +44,7 @@ steps:
     targetType: 'inline'
     script: |
       # Write your commands here
-      
+      whoami
       sudo echo 'Hello world'
       sudo touch azurepipeline.txt > "Pipeline working"
       sudo pwd
